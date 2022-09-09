@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script basics</title>
+    <script type ="text/javascript">
+        function msg()
+        {
+            alert("welcome to js in the head tag");
+        }
+    </script>
+    <!----external---->
+<script type="text/javascript" src="external.js"> </script>
+</head>
+<body>
+    <script type ="text/javascript">
+        function msg1()
+        {
+            alert("Welcome to js in the Body tag");
+        }
+    </script>
+
+    <script type ="text/javascript">
+          alert("i am auto alert");
+    </script>
+    <input type="button" value="Click head tag"onclick="msg()"/>
+    <input type="button" value="Click body tag"onclick="msg1()"/>
+    <input type="button" value="Click External js"onclick="msg2()"/>
+   <p id="info"></p>
+    <script>
+          document.getElementById("info").innerHTML="I am a message through innerHTML";
+   </script>
+   <script>
+         document.write("i am a message through documents.write");
+    </script>
+    <script>
+        window.alert("i am a message through window alert");
+   </script>
+   <script>
+          console.log("i am a message through console.log");
+   </script>
+     <br>
+     <br>
+   <script> 
+         var empid=100;
+         var empname="john";
+         var empmobile=[1234567890,0987654321];
+         var empstatus=true;
+         document.write(empname + "s" + " id is " + empid);
+         document.write("Primary number " + empmobile[0] + " <br> ");
+         document.write("Secondary number " + empmobile[1] + " <br> ");
+   </script>
+   <p id="address"></p>
+     <script> 
+        const address = {
+        street_number: 125,
+        city: "bangalore",
+        pincode: 4537381
+       }
+        document.getElementById("address").innerHTML=address.street_number + " <br> " + address.city + " <br> " + address.pincode + "<br";
+    </script>
+</body>
+</html>

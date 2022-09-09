@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage for Float</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .parent{
+                width:100%;
+                float:center;
+            }
+            .header{
+                text-align: center;
+                background-color:rgb(7, 17, 26);
+                border:2px solid rgb(97, 11, 11);
+                color:white;
+                padding: 10px;
+            }
+            .left{
+                width: 25%;
+                height:800px;
+                background-color: rgb(174, 199, 246);
+                border:2px solid rgb(2, 1, 41);
+                float:left;
+            }
+            .center{
+                width: 40%;
+                height:800px;
+                background-color: rgb(232, 239, 232);
+                border:2px solid rgb(5, 38, 16);
+                float:left;
+            }
+            .right{
+                width: 35%;
+                height:800px;
+                background-color: rgb(252, 105, 230);
+                border:2px solid rgb(59, 19, 51);
+                float:left;
+            }
+            .footer{
+                text-align: center;
+                background-color: rgb(223, 216, 176);
+                border:2px solid rgb(86, 21, 21);
+                color:rgb(3, 3, 3);
+                padding: 10px;
+            }
+            .vertical{
+                list-style-type: none;
+                margin:0;
+                margin-top: 20px;
+                padding:10px;
+                width:200px;
+                position:sticky;
+                overflow:auto;
+                height:100%;
+            }
+            li a.verticalnav{
+                display:block;
+                color:darkblue;
+                text-align: left;
+                padding: 5px 5px;
+                text-decoration: none;
+                font-size: larger;
+            }
+            li a.verticalnav:hover{
+                background-color: aquamarine;
+            }
+            #active{
+                background-color: blueviolet;
+            }
+            li a.verticalnav:hover{
+                background-color: aquamarine;
+            }
+    
+            p::first-letter{
+                color:rgb(255, 0, 81);
+                font-size: 25px;
+                font-weight: bold;
+            }
+            p::selection{
+                color:blue;
+                background-color: aquamarine;
+            }
+            ::marker{
+                color:rgb(247, 242, 247);
+            }
+            body{
+                background-image: url("https://www.bing.com/th?id=OIP.QnTaUs4BXrqFbpkvUtNPIAHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .transition{
+                width:100px;
+                height:100px;
+                transition: width 2s,height 2s, transform 1s;
+            }
+            .transition:hover{
+                width:20px;
+                height:10px;
+                transform:rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="header">
+                <h2>Online Movies</h2>
+            </div>
+            <div>
+                <!--Vertical Navigation-->
+                <div class="left"> <h3>Movie Gener</h3>
+                    <ul class="vertical">
+                        <li><a id="active" class="verticalnav" target="_blank">Horror</a></li>
+                        <li><a class="verticalnav" target="_blank">Action</a></li>
+                        <li><a class="verticalnav">Classical</a></li>
+                        <li><a class="verticalnav">Romantic</a></li>
+                        <li><a class="verticalnav">Fictional</a></li>
+                        <li><a class="verticalnav">Sci-Fic</a></li>
+                        <li><a class="verticalnav">Animated</a></li>
+                        <li><a class="verticalnav">Drama</a></li>
+                        <li><a class="verticalnav">Religious</a></li>
+                        <li><a class="verticalnav">Comedy</a></li>
+                        <li><a class="verticalnav">Multi Language</a></li>
+                    </ul>
+                </div>
+                <!--float property with a image-->
+                <div class="center">
+                    <h3>New Movie Release-2021</h3>
+                    <p><img src="https://www.searchhyderabad.com/wp-content/uploads/2022/07/Upcoming-Bollywood-Movies-in-July-2022.png"  height="100px" width="100px"  style="float:left">Here is a list of Bollywood upcoming movies in July 2022. Movie production announces these movie release dates, and release dates may vary. This list of Hindi movies in July 2022 includes Khuda Haafiz: Chapter II – Agni Pariksha, Titu Ambani, Juni The Last Prayer, Shabaash Mithu, HIT: The First Case, Judaa Hoke Bhi, Jaadugar, Pippa, Shamshera, Rk/Rkay, Vikrant Rona, Ek Villain Returns, Good Luck Jerry, Rocketry: The Nambi Effect, Om: The Battle Within  </p><hr>
+                    <p><img src="https://film-book.com/wp-content/uploads/2020/12/dune-tom-and-jerry-the-conjuring-3-judas-and-the-black-messiah-godzilla-vs-kong-the-suicide-squad-the-matrix-4-01-700x400-1.jpg" alt="2021 RELEASED" height="100px" width="100px" style="float:right">WarnerMedia made the first unprecedented move in the streaming wars when it announced that it will release Wonder Woman 1984 later this month on HBO Max. Now WarnerMedia is throwing down the gauntlet completely and is going all in – they are releasing their entire 2021 slate of box office films coterminous on HBO Max and in theaters. “Warner Bros. will continue to exhibit the films theatrically worldwide, while adding an exclusive one month access period on the HBO Max streaming platform in the U.S. concurrent with the film’s domestic release.”</p><hr>
+                    
+                </div>
+                <div class="right">
+                    <h3>New release watch now</h3>
+                    <iframe width="327" height="187" style="margin-left:20px;margin-top:20px;" src="https://i.ytimg.com/an_webp/5qs37JyMJrU/mqdefault_6s.webp?du=3000&sqp=CMSO55gG&rs=AOn4CLARAbro_uYNpaOrRgcVD5ELaDH6VA">
+                    </iframe>
+                    <iframe width="327" height="187" style="margin-left:20px;margin-top:20px;" src="https://i.ytimg.com/an_webp/8dRWjTI6VaI/mqdefault_6s.webp?du=3000&sqp=CNbZ5pgG&rs=AOn4CLAe-62ZdwszkukYl69y26s3xdFowA">
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer">
+                <br><br>
+                <h2><br><br>
+                    &copy; www.youtube.com<br>www.moviesnow.com</h2><br>
+                <ul style="text-align:left">
+                    <h3>Contact</h3>
+                    <li>3456986245</li>
+                    <li>6350876544</li>
+                </ul>
+                <ul style="text-align:right">
+                    <h3>WATCH MOVIE</h3>
+                   <img class="transition" src="https://i.ytimg.com/vi/-I8zqSfWq1M/maxresdefault.jpg" height="100px" width="100px" alt="MOVIE" >            
+                 </ul>
+            </div>
+        </div>    
+    </body>
+    </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encap DATA</title>
+</head>
+<body>
+     <script>
+        function Trainee_details(tid,tname)
+        {
+            var id=tid;
+            var name=tname;
+            //Encapsulation in java script
+            Object.defineProperty
+            {
+                this,"ID",
+                {
+                    get:function()
+                    {
+                        return id;
+                    },
+                    set:function()
+                    {
+                        this.id=id;
+                    }
+                }
+            };
+            Object.defineProperty
+            {
+             this,"NAME",
+             {
+               get:function()
+               {
+                 return name;
+               },
+               set:function()
+                 {
+                    this.name=name;
+                 }
+             }  
+            };
+        }
+
+              var t = new Trainee_details(10,"john");
+               console.log(t.ID);
+               console.log(t.NAME);
+            </script>
+            <script>
+             class Employee
+             {
+                 constructor() 
+                  {
+                      var empid;
+                     var empname;
+                  }
+             //property
+             //getID()
+              //{
+              //  return this.empid;
+              //}
+                    setID(id)
+                    {
+                         this.empid=id;
+                    }
+             }
+        var e=new Employee();
+        e.setID(10);
+        //console.log(e.empid());
+        //console.log(e.empname());
+     </script>
+     <script>
+        class address{
+            //variabe
+            //street_no;
+            //city;
+            //#pincode;
+            
+            constructor(no,city,pincode)
+            {
+                this.street_no=no;
+                this.city=city;
+                var _pincode=pincode;
+                this.get=()=>{
+                    return _pincode;
+                }
+            }
+            hoist()
+            {
+                console.log("value is:" + a);
+                var a=234;
+            }
+        }
+        var addr=new address(3,"bangl",3456787);
+        console.log(addr.street_no);
+        console.log(addr.city);
+        console.log(addr._pincode);
+        console.log(addr.get());
+        addr.hoist();
+     </script>
+</body>
+</html>
